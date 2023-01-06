@@ -11,7 +11,8 @@ app.use(express.json());
 
 const hotels = [
     {id: 1, name: 'Fawlty Towers', rating: 1},
-    {id: 2, name: 'Dorchester', rating: 5}
+    {id: 2, name: 'Dorchester', rating: 5},
+    {id: 3, name: 'Hilton', rating: 4}
 ];
 
 app.get('/hotels', (req, res) => {
