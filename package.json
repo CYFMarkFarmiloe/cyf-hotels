@@ -17,7 +17,8 @@
     "build": "npm i && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "host": "node server/index.js"
+    "server:dev": "cross-env NODE_ENV=development node server/index.js",
+    "server:host": "node server/index.js"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3"
   }
 }
